@@ -1,0 +1,10 @@
+== xPL
+
+=== Description
+Plugin permettant à Jeedom de discuter avec un reseaux xPL
+
+=== Configuration
+include::configuration.asciidoc[]
+
+=== Changelog
+include::changelog.asciidoc[]
