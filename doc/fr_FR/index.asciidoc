@@ -1,4 +1,4 @@
-== xPL
+== XPL
 
 === Description
 Plugin permettant à Jeedom de discuter avec un reseaux xPL
