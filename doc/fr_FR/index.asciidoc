@@ -3,8 +3,14 @@
 === Description
 Plugin permettant à Jeedom de discuter avec un reseaux xPL
 
+'''
 === Configuration
 include::configuration.asciidoc[]
 
+'''
+=== FAQ
+include::faq.asciidoc[]
+
+'''
 === Changelog
 include::changelog.asciidoc[]
