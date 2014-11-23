@@ -10,7 +10,7 @@ sendVarToJS('eqType', 'xpl');
 ?>
 
 <div class="row row-overflow">
-    <div class="col-lg-2">
+    <div class="col-lg-2 col-md-3 col-sm-4">
         <div class="bs-sidebar">
             <ul id="ul_eqLogic" class="nav nav-list bs-sidenav">
                 <a class="btn btn-default eqLogicAction" style="width : 100%;margin-top : 5px;margin-bottom: 5px;" data-action="add"><i class="fa fa-plus-circle"></i> {{Ajouter un équipement}}</a>
@@ -24,7 +24,7 @@ sendVarToJS('eqType', 'xpl');
         </div>
     </div>
 
-    <div class="col-lg-10 eqLogic" style="border-left: solid 1px #EEE; padding-left: 25px;display: none;">
+    <div class="col-lg-10 col-md-9 col-sm-8 eqLogic" style="border-left: solid 1px #EEE; padding-left: 25px;display: none;">
         <?php
         $cron = cron::byId(config::byKey('xPLDeamonCronId', 'xPL'));
         if (is_object($cron) && $cron->getState() != 'run') {
@@ -35,21 +35,21 @@ sendVarToJS('eqType', 'xpl');
             <fieldset>
                 <legend>{{Général}}</legend>
                 <div class="form-group">
-                    <label class="col-lg-3 control-label">{{Nom de l'équipement xPL}}</label>
-                    <div class="col-lg-3">
+                    <label class="col-sm-3 control-label">{{Nom de l'équipement xPL}}</label>
+                    <div class="col-sm-3">
                         <input type="text" class="eqLogicAttr form-control" data-l1key="id" style="display : none;" />
                         <input type="text" class="eqLogicAttr form-control" data-l1key="name" placeholder="{{Nom de l'équipement xPL}}"/>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-lg-3 control-label">{{Nom logique de l'équipement xPL}}</label>
-                    <div class="col-lg-3">
+                    <label class="col-sm-3 control-label">{{Nom logique de l'équipement xPL}}</label>
+                    <div class="col-sm-3">
                         <input type="text" class="eqLogicAttr form-control" data-l1key="logicalId"/>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-lg-3 control-label" >{{Objet parent}}</label>
-                    <div class="col-lg-3">
+                    <label class="col-sm-3 control-label" >{{Objet parent}}</label>
+                    <div class="col-sm-3">
                         <select id="sel_object" class="eqLogicAttr form-control" data-l1key="object_id">
                             <?php
                             foreach (object::all() as $object) {
@@ -60,8 +60,8 @@ sendVarToJS('eqType', 'xpl');
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-lg-3 control-label">{{Catégorie}}</label>
-                    <div class="col-lg-8">
+                    <label class="col-sm-3 control-label">{{Catégorie}}</label>
+                    <div class="col-sm-8">
                         <?php
                         foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
                             echo '<label class="checkbox-inline">';
@@ -73,12 +73,12 @@ sendVarToJS('eqType', 'xpl');
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-lg-3 control-label">{{Visible}}</label>
-                    <div class="col-lg-1">
+                    <label class="col-sm-3 control-label">{{Visible}}</label>
+                    <div class="col-sm-1">
                         <input type="checkbox" class="eqLogicAttr" data-l1key="isVisible" checked/>
                     </div>
-                    <label class="col-lg-2 control-label">{{Activer}}</label>
-                    <div class="col-lg-1">
+                    <label class="col-sm-2 control-label">{{Activer}}</label>
+                    <div class="col-sm-1">
                         <input type="checkbox" class="eqLogicAttr" data-l1key="isEnable" checked/>
                     </div>
                 </div>
