@@ -31,15 +31,13 @@ class x10Security {
         }
         $source = $_message->source();
         $command = $_message->bodyItem('command');
-		$device = $_message->bodyItem('device');
-		$type = $_message->bodyItem('type');
+        $device = $_message->bodyItem('device');
         $xPL = xPL::byLogicalId($source, 'xpl');
         if (is_object($xPL)) {
             $list_cmd = $xPL->getCmd();
             foreach ($list_cmd as $cmd) {
                 $device_compare = $cmd->getItem('device');
-				$type_compare = $cmd->getItem('type');
-                if ($device === $device_compare && $type === $type_compare) {
+                if ($device === $device_compare) {
                     $event_info = array();
                     $event_info['cmd_id'] = $cmd->getId();
                     $event_info['value'] = $command;
