@@ -15,12 +15,12 @@
  * along with Jeedom. If not, see <http://www.gnu.org/licenses/>.
  */
 
-$(function() {
-    $('#table_cmd tbody').delegate('tr .cmdAttr[data-l1key=configuration][data-l2key=xPLtypeCmd]', 'change', function() {
+$(function () {
+    $('#table_cmd tbody').delegate('tr .cmdAttr[data-l1key=configuration][data-l2key=xPLtypeCmd]', 'change', function () {
         changexPLTypeCmd($(this));
     });
 
-    $('#table_cmd tbody').delegate('tr .cmdAttr[data-l1key=configuration][data-l2key=xPLschema]', 'change', function() {
+    $('#table_cmd tbody').delegate('tr .cmdAttr[data-l1key=configuration][data-l2key=xPLschema]', 'change', function () {
         changexPLTypeCmd($(this));
     });
 
@@ -70,6 +70,7 @@ function addCmdToTable(_cmd) {
     tr += '<td><input class="cmdAttr input-sm form-control" data-l1key="unite" style="width : 100px;"></td>';
     tr += '<td>';
     if (is_numeric(_cmd.id)) {
+        tr += '<a class="btn btn-default btn-xs cmdAction expertModeVisible" data-action="configure"><i class="fa fa-cogs"></i></a> ';
         tr += '<a class="btn btn-default btn-xs cmdAction" data-action="test"><i class="fa fa-rss"></i> {{Tester}}</a>';
     }
     tr += '<i class="fa fa-minus-circle pull-right cmdAction cursor" data-action="remove"></i></td>';
@@ -120,10 +121,10 @@ function getxPLbody(_xPLschema, _xPltypeCmd) {
         },
         dataType: 'json',
         async: false,
-        error: function(request, status, error) {
+        error: function (request, status, error) {
             handleAjaxError(request, status, error);
         },
-        success: function(data) { // si l'appel a bien fonctionné
+        success: function (data) { // si l'appel a bien fonctionné
             if (data.state != 'ok') {
                 $('#div_alert').showAlert({message: data.result, level: 'danger'});
                 return;

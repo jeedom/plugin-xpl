@@ -24,8 +24,8 @@ $eqLogics = eqLogic::byType('xpl');
             </ul>
         </div>
     </div>
-    
-     <div class="col-lg-10 col-md-9 col-sm-8 eqLogicThumbnailDisplay" style="border-left: solid 1px #EEE; padding-left: 25px;">
+
+    <div class="col-lg-10 col-md-9 col-sm-8 eqLogicThumbnailDisplay" style="border-left: solid 1px #EEE; padding-left: 25px;">
         <legend>{{Mes équipements xPL}}
         </legend>
         <?php
@@ -57,7 +57,7 @@ $eqLogics = eqLogic::byType('xpl');
         ?>
         <form class="form-horizontal">
             <fieldset>
-                <legend><i class="fa fa-arrow-circle-left eqLogicAction cursor" data-action="returnToThumbnailDisplay"></i> {{Général}}</legend>
+                <legend><i class="fa fa-arrow-circle-left eqLogicAction cursor" data-action="returnToThumbnailDisplay"></i> {{Général}}<i class='fa fa-cogs eqLogicAction pull-right cursor expertModeVisible' data-action='configure'></i></legend>
                 <div class="form-group">
                     <label class="col-sm-3 control-label">{{Nom de l'équipement xPL}}</label>
                     <div class="col-sm-3">
