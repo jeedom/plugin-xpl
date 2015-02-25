@@ -96,5 +96,54 @@ $XPL_BODY = array(
                        [zone=<command value>]
 		       [delay=<delay>]",
     ),
+    'lighting.basic' => array(
+        'XPL-CMND' => "command=[goto|activate|deactivate]
+                       [network=ID]
+                       [[device=ID]|[scene=ID]]
+                       [channel=#]
+                       [level=0-100]
+                       [fade-rate=[default|<time>]",
+    ),
+/*    'lighting.request' => array(
+        'XPL-CMND' => "request=[gateinfo|netlist|netinfo|devlist|devinfo|devstate|scnlist|scninfo]
+                       [network=ID]
+                       [[device=ID]|[scene=ID]][channel=#]",
+    ),
+    'lighting.gateinfo' => array(
+        'XPL-STAT' => "[network=ID]
+                       [[device=ID]|[scene=ID]][channel=#]",
+    ),
+    'lighting.netlist' => array(
+        'XPL-STAT' => "",
+    ),
+    'lighting.netinfo' => array(
+        'XPL-STAT' => "network=ID",
+    ),
+    'lighting.devlist' => array(
+        'XPL-STAT' => "network=ID",
+    ),
+    'lighting.devinfo' => array(
+        'XPL-STAT' => "network=ID
+                       device=ID",
+    ),
+    'lighting.scnlist' => array(
+        'XPL-STAT' => "network=ID",
+    ),
+    'lighting.scninfo' => array(
+        'XPL-STAT' => "network=ID
+                       scene=ID",
+    ),
+    'lighting.gateway' => array(
+        'XPL-TRIG' => "",
+    ),*/
+    'lighting.device' => array(
+        'XPL-TRIG' => "network=ID
+                       device=ID
+                       channel=#",
+    ),    
+/*    'lighting.scene' => array(
+        'XPL-TRIG' => "network=ID
+                       scene=ID",
+    ),*/
 );
 ?>

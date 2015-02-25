@@ -87,6 +87,10 @@ class xpl extends eqLogic {
                 require_once dirname(__FILE__) . '/../schema/osd.basic.class.php';
                 $list_event = osdBasic::parserMessage($_message);
                 break;
+            case 'lighting.device':
+                require_once dirname(__FILE__) . '/../schema/lighting.device.class.php';
+                $list_event = lightingDevice::parserMessage($_message);
+                break;
             default:
                 break;
         }

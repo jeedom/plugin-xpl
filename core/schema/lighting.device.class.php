@@ -25,33 +25,49 @@ require_once dirname(__FILE__) . '/../class/xpl.core.class.php';
 include_file('core', 'xpl', 'class', 'xpl');
 include_file('core', 'xpl', 'config', 'xpl');
 
-class acBasic {
+
+class lightingDevice {
 
     public static function parserMessage($_message) {
         if ($_message->getIdentifier() == xPLMessage::xplcmnd) {
             return false;
         }
+	$type = $_message->getIdentifier(); // 1,2,3
+	$shema = $_message->messageSchemeIdentifier();
+
         $source = $_message->source();
-        $address = $_message->bodyItem('address');
-        $unit = $_message->bodyItem('unit');
-        $command = $_message->bodyItem('command');
+        $network = $_message->bodyItem('network');
+        $device = $_message->bodyItem('device');
+        $channel = $_message->bodyItem('channel');
+
+        $state = $_message->bodyItem('state');
+        $level = $_message->bodyItem('level');
+
         $xPL = xPL::byLogicalId($source, 'xpl');
         if (is_object($xPL)) {
             $list_cmd = $xPL->getCmd();
             foreach ($list_cmd as $cmd) {
-                $address_compare = $cmd->getItem('address');
-                $unit_compare = $cmd->getItem('unit');
-                if ($address === $address_compare && $unit === $unit_compare) {
+		$shema_compare = $cmd->getConfiguration('xPLschema');
+		$type_compare = $cmd->getConfiguration('xPLtypeCmd'); //'XPL-TRIG'
+                $network_compare = $cmd->getItem('network');
+                $device_compare = $cmd->getItem('device');
+                $channel_compare = $cmd->getItem('channel');
+
+                if ($shema==$shema_compare
+		&& ($type==xPLMessage::xpltrig && $type_compare=='XPL-TRIG' || $type==xPLMessage::xplstat && $type_compare=='XPL-STAT')
+		&&  $network === $network_compare 
+		&&  $device === $device_compare 
+		&&  $channel === $channel_compare 
+		) {
                     $event_info = array();
                     $event_info['cmd_id'] = $cmd->getId();
-                    $event_info['value'] = $command;
+                    $event_info['value'] = $state;
                     return array($event_info);
                 }
             }
         }
         return array();
     }
-
 }
 
 ?>

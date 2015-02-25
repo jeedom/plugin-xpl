@@ -42,6 +42,18 @@ function addCmdToTable(_cmd) {
     selxPlschema += '<option value="ac.basic">ac.basic</option>';
     selxPlschema += '<option value="osd.basic">osd.basic</option>';
     selxPlschema += '<option value="x10.security">x10.security</option>';
+    selxPlschema += '<option value="lighting.basic">lighting.basic</option>';
+/*    selxPlschema += '<option value="lighting.request">lighting.basic</option>';
+    selxPlschema += '<option value="lighting.gateinfo">lighting.basic</option>';
+    selxPlschema += '<option value="lighting.netlist">lighting.basic</option>';
+    selxPlschema += '<option value="lighting.netinfo">lighting.basic</option>';
+    selxPlschema += '<option value="lighting.devlist">lighting.basic</option>';
+    selxPlschema += '<option value="lighting.devinfo">lighting.basic</option>';
+    selxPlschema += '<option value="lighting.scnlist">lighting.scnlist</option>';
+    selxPlschema += '<option value="lighting.scninfo">lighting.scninfo</option>';
+    selxPlschema += '<option value="lighting.gateway">lighting.gateway</option>';*/
+    selxPlschema += '<option value="lighting.device">lighting.device</option>';
+//    selxPlschema += '<option value="lighting.scene">lighting.scene</option>';
     selxPlschema += '</select>';
 
     var typeXmdxPL = '<select class="cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="xPLtypeCmd" style="width : 150px;margin-top : 5px;">';
