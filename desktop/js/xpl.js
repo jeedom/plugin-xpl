@@ -75,7 +75,7 @@ function addCmdToTable(_cmd) {
     tr += '<textarea style="height : 100px;" class="cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="xPLbody"></textarea>';
     tr += '</td>';
     tr += '<td>';
-    tr += '<span><input type="checkbox" class="cmdAttr" data-l1key="isHistorized" /> {{Historiser}}<br/></span>';
+    tr += '<span><input type="checkbox" class="cmdAttr bootstrapSwitch" data-size="mini" data-label-text="{{Historiser}}" data-l1key="isHistorized" /></span> ';
     tr += '<input class="tooltips cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="minValue" placeholder="{{Min}}" title="{{Min}}" style="width : 40%;display : inline-block;"> ';
     tr += '<input class="tooltips cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="maxValue" placeholder="{{Max}}" title="{{Max}}" style="width : 40%;display : inline-block;">';
     tr += '</td>';
