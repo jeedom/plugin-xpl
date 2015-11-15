@@ -178,6 +178,8 @@ class xPLCmd extends cmd {
                             }
                             $body = str_replace($replace, $replaceBy, $this->getConfiguration('xPLbody'));
                             break;
+                        default:
+                            $body = $this->getConfiguration('xPLbody');
                     }
                     break;
             }
