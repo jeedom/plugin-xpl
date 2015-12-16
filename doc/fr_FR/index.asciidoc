@@ -1,13 +1,6 @@
-:icons:
-== XPL
-
-=== Description
+= XPL
 Plugin permettant à Jeedom de discuter avec un reseaux xPL
 
 '''
-=== Configuration
+== Configuration
 include::configuration.asciidoc[]
-
-'''
-=== FAQ
-include::faq.asciidoc[]
