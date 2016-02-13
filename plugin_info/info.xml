@@ -7,8 +7,8 @@
     <licence>AGPL</licence>
     <author>Loïc Gevrey</author>
     <installation>Après une activation ou une desactivation veuillez relancer le service jeedom : sudo service jeedom restart</installation>
-    <require>1.10</require>
-    <version>1.0</version>
+    <require>2.0</require>
     <category>automation protocol</category>
+    <hasOwnDeamon>1</hasOwnDeamon>
 </info>
 

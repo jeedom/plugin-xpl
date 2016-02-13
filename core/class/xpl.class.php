@@ -26,6 +26,31 @@ class xpl extends eqLogic {
 
 	/*     * ***********************Methode static*************************** */
 
+	public static function deamon_info() {
+		$return = array();
+		$return['log'] = '';
+		$return['state'] = 'nok';
+		$cron = cron::byClassAndFunction('xpl', 'deamon');
+		if (is_object($cron) && $cron->running()) {
+			$return['state'] = 'ok';
+		}
+		$return['launchable'] = 'ok';
+		return $return;
+	}
+
+	public static function deamon_start($_debug = false) {
+		self::deamon_stop();
+		$deamon_info = self::deamon_info();
+		if ($deamon_info['launchable'] != 'ok') {
+			throw new Exception(__('Veuillez vérifier la configuration', __FILE__));
+		}
+		$cron = cron::byClassAndFunction('xpl', 'deamon');
+		if (!is_object($cron)) {
+			throw new Exception(__('Tache cron introuvable', __FILE__));
+		}
+		$cron->run();
+	}
+
 	public static function deamon() {
 		$xplinstance = XPLInstance::getXPLInstance();
 		$eventReturn = $xplinstance->doEvents();
