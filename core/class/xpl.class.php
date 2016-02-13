@@ -51,6 +51,14 @@ class xpl extends eqLogic {
 		$cron->run();
 	}
 
+	public static function deamon_stop() {
+		$cron = cron::byClassAndFunction('xpl', 'deamon');
+		if (!is_object($cron)) {
+			throw new Exception(__('Tache cron introuvable', __FILE__));
+		}
+		$cron->halt();
+	}
+
 	public static function deamon() {
 		$xplinstance = XPLInstance::getXPLInstance();
 		$eventReturn = $xplinstance->doEvents();
