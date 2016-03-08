@@ -145,5 +145,47 @@ $XPL_BODY = array(
         'XPL-TRIG' => "network=ID
                        scene=ID",
     ),*/
+    'teleinfo.basic' => array(
+        'XPL-STAT' => "adco=<Adresse du compteur>
+                       optarif=<Option tarifaire>
+                       isousc=<Intensité souscrite>
+                       base=<Index option base>
+                       iinst=<Intensité instantanée>
+                       imax=<Intensité maximale appelée>
+                       motdetat=<Mot d'état du compteur>
+                       [hchc=<Heures|creuses>]
+                       [hchp=<Heures|pleines>]
+                       [ejphn=<Heures|normales>]
+                       [ejphpm=<Heures|de pointe>]
+                       [bbrhcjb=<Heures|creuses jours bleus>]
+                       [bbrhpjb=<Heures|pleines jours bleus>]
+                       [bbrhcjw=<Heures|creuses jours blancs>]
+                       [bbrhpjw=<Heures|pleines jours blancs>]
+                       [bbrhcjr=<Heures|creuses jours rouges>]
+                       [bbrhpjr=<Heures|pleines jours rouges>]
+                       [pejp=<Préavis|début EJP (30min)>]
+                       [ptec=<Période|tarifaire actuelle>]
+                       [demain=<Couleur|du lendemain>]
+                       [adps=<Avertissement|de dépassement>]
+                       [papp=<Puissance|apparente>]
+                       [hhphc=<Horaire|heure pleine/heure creuse>]
+                       [ppot=<Présence|des potentiels>]
+                       [iinst1=<Intensité|instantanée phase 1>]
+                       [iinst2=<Intensité|instantanée phase 2>]
+                       [iinst3=<Intensité|instantanée phase 3>]
+                       [imax1=<Intensité|maximale phase 1>]
+                       [imax2=<Intensité|maximale phase 2>]
+                       [imax3=<Intensité|maximale phase 3>]
+                       [pmax=<Puissance|maximale triphasée>]",
+    ),
+/*    'teleinfo.short' => array(
+        'XPL-STAT' => "adir1=<Dépassement d'intensité sur la phase 1>
+                       adir2=<Dépassement d'intensité sur la phase 2>
+                       adir3=<Dépassement d'intensité sur la phase 3>
+                       adco=<Adresse du compteur>
+                       iinst1=<Intensité instantanée phase 1>
+                       iinst2=<Intensité instantanée phase 2>
+                       iinst3=<Intensité instantanée phase 3>
+    ),*/
 );
 ?>

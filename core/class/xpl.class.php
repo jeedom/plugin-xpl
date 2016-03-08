@@ -123,6 +123,9 @@ class xpl extends eqLogic {
 				require_once dirname(__FILE__) . '/../schema/lighting.device.class.php';
 				$list_event = lightingDevice::parserMessage($_message);
 				break;
+		    	case 'teleinfo.basic':
+		        	require_once dirname(__FILE__) . '/../schema/teleinfo.basic.class.php';
+		        	$list_event = teleinfoBasic::parserMessage($_message);
 			default:
 				break;
 		}
