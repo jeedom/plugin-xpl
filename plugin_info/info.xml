@@ -3,9 +3,8 @@
     <id>xpl</id>
     <name>xPL</name>
     <description>Plugin pour gerer des équipements xPL</description>
-    <icon>fa fa-sitemap</icon>
     <licence>AGPL</licence>
-    <author>Loïc Gevrey</author>
+    <author>Loïc</author>
     <installation>Après une activation ou une desactivation veuillez relancer le service jeedom : sudo service jeedom restart</installation>
     <require>2.0</require>
     <category>automation protocol</category>
