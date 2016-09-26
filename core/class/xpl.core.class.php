@@ -79,18 +79,22 @@ class xPLDevice {
 
     public function setAddress($address) {
         $this->address = $address;
+        return $this;
     }
 
     public function setHeartBeatInterval($minutes) {
         $this->heartBeatInterval = $minutes;
+        return $this;
     }
 
     public function setPort($p) {
         $this->port = $p;
+        return $this;
     }
 
     public function setLastHeartBeat($timestamp) {
         $this->lastHeartBeat = $timestamp;
+        return $this;
     }
 
 }
@@ -486,14 +490,17 @@ class xPLMessage {
 
     public function setMessageSchemeIdentifier($messageSchemeIdentifier) {
         $this->msi = $messageSchemeIdentifier;
+        return $this;
     }
 
     public function setSource($value) {
         $this->source = $value;
+        return $this;
     }
 
     public function setTarget($value) {
         $this->target = $value;
+        return $this;
     }
 
     public function getIdentifier() {
@@ -505,5 +512,3 @@ class xPLMessage {
     }
 
 }
-
-?>
