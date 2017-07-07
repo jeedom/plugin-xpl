@@ -52,12 +52,21 @@ foreach ($eqLogics as $eqLogic) {
         </div>
 
         <div class="col-lg-10 col-md-9 col-sm-8 eqLogic" style="border-left: solid 1px #EEE; padding-left: 25px;display: none;">
-            <?php
-$cron = cron::byId(config::byKey('xPLDeamonCronId', 'xPL'));
-if (is_object($cron) && $cron->getState() != 'run') {
-	echo '<div class="alert alert-danger" >{{Attention le démon xPL n\'est pas en marche. Vérifiez pourquoi. </div>';
-}
-?>
+          
+		<a class="btn btn-success eqLogicAction pull-right" data-action="save"><i class="fa fa-check-circle"></i> {{Sauvegarder}}</a>
+  		<a class="btn btn-danger eqLogicAction pull-right" data-action="remove"><i class="fa fa-minus-circle"></i> {{Supprimer}}</a>
+  		<a class="btn btn-default eqLogicAction pull-right" data-action="configure"><i class="fa fa-cogs"></i> {{Configuration avancée}}</a>
+		
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation"><a href="#" class="eqLogicAction" aria-controls="home" role="tab" data-toggle="tab" data-action="returnToThumbnailDisplay"><i class="fa fa-arrow-circle-left"></i></a></li>
+    <li role="presentation" class="active"><a href="#eqlogictab" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-tachometer"></i> {{Equipement}}</a></li>
+    <li role="presentation"><a href="#commandtab" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-list-alt"></i> {{Commandes}}</a></li>
+  </ul>
+		
+	  <div class="tab-content" style="height:calc(100% - 50px);overflow:auto;overflow-x: hidden;">
+    <div role="tabpanel" class="tab-pane active" id="eqlogictab">
+      <br/>	
+		
             <form class="form-horizontal">
                 <fieldset>
                     <legend><i class="fa fa-arrow-circle-left eqLogicAction cursor" data-action="returnToThumbnailDisplay"></i> {{Général}}<i class='fa fa-cogs eqLogicAction pull-right cursor expertModeVisible' data-action='configure'></i></legend>
@@ -115,7 +124,8 @@ foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
                 </fieldset>
             </form>
 
-            <legend>{{Commandes}}</legend>
+</div>
+<div role="tabpanel" class="tab-pane" id="commandtab">
             <a class="btn btn-success btn-sm cmdAction" data-action="add"><i class="fa fa-plus-circle"></i> {{Ajouter une commande xPL}}</a><br/><br/>
             <div class="alert alert-info">
                 {{Sous type : <br/>
@@ -140,14 +150,9 @@ foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
                 </tbody>
             </table>
 
-            <form class="form-horizontal">
-                <fieldset>
-                    <div class="form-actions">
-                        <a class="btn btn-danger eqLogicAction" data-action="remove"><i class="fa fa-minus-circle"></i> {{Supprimer}}</a>
-                        <a class="btn btn-success eqLogicAction" data-action="save"><i class="fa fa-check-circle"></i> {{Sauvegarder}}</a>
-                    </div>
-                </fieldset>
-            </form>
+           
+        </div>
+    </div>
 
         </div>
     </div>
