@@ -61,9 +61,13 @@ class xpl extends eqLogic {
 
 	public static function deamon() {
 		$xplinstance = XPLInstance::getXPLInstance();
-		$eventReturn = $xplinstance->doEvents();
-		if ($eventReturn == 1) {
-			xPL::proccessMessageEvent($xplinstance->getMessage());
+		while (true) {
+			$eventReturn = $xplinstance->doEvents();
+			if ($eventReturn == 1) {
+				xPL::proccessMessageEvent($xplinstance->getMessage());
+			} else {
+				return;
+			}
 		}
 	}
 
