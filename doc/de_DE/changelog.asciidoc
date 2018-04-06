@@ -1,1 +1,1 @@
-Änderungsprotokoll details : https://github.com/jeedom/plugin-xpl/commits/stable
+Changelog détaillé : https://github.com/jeedom/plugin-xpl/commits/stable
