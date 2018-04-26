@@ -1,5 +1,5 @@
 = XPL
-Plugin permettant à Jeedom de discuter avec un reseaux xPL
+Das Plugin ermöglicht es, das Jeedom mit einem xPL-Netzwerk chatten kann.
 
 '''
 == Konfiguration
