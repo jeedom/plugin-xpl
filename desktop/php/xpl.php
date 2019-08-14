@@ -88,7 +88,7 @@ foreach ($eqLogics as $eqLogic) {
                         <div class="col-sm-3">
                             <select id="sel_object" class="eqLogicAttr form-control" data-l1key="object_id">
                                 <?php
-foreach (object::all() as $object) {
+foreach (jeeObject::all() as $object) {
 	echo '<option value="' . $object->getId() . '">' . $object->getName() . '</option>';
 }
 ?>
