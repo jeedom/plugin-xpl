@@ -1,5 +1,48 @@
 {
-    "plugins/xpl/plugin_info/info.xml": {
-        "Plugin pour gerer des équipements xPL": "Plugin para gerir o equipamento xpl"
+    "plugins\/xpl\/desktop\/php\/xpl.php": {
+        "401 - Accès non autorisé": "401 - Acesso não autorizado",
+        "Ajouter un équipement": "",
+        "Rechercher": "Pesquisa",
+        "Mes équipements xPL": "",
+        "Vous n'avez pas encore d'équipement xPL, cliquez sur Ajouter un équipement pour commencer": "",
+        "Sauvegarder": "Salvar",
+        "Supprimer": "Remover",
+        "Configuration avancée": "Configuração avançada",
+        "Equipement": "Equipamento",
+        "Commandes": "Comandos",
+        "Général": "Geral",
+        "Nom de l'équipement xPL": "",
+        "Nom logique de l'équipement xPL": "",
+        "Objet parent": "Objeto pai",
+        "Catégorie": "Categoria",
+        "Activer": "Ativar",
+        "Visible": "Visivél",
+        "Délai maximum autorisé entre 2 messages (min)": "Tempo máximo permitido entre 2 mensagens (min)",
+        "Ajouter une commande xPL": "",
+        "Nom": "Nome",
+        "Type": "Tipo",
+        "Schéma": "",
+        "Body": "",
+        "Paramètres": "Configurações",
+        "Unité": "Unidade"
+    },
+    "plugins\/xpl\/desktop\/js\/xpl.js": {
+        "Afficher": "Display",
+        "Historiser": "Historicizar",
+        "Min": "Baixo",
+        "Max": "",
+        "Tester": "Teste"
+    },
+    "plugins\/xpl\/core\/ajax\/xpl.ajax.php": {
+        "401 - Accès non autorisé": "401 - Acesso não autorizado",
+        "Aucune methode correspondante à : ": "Aucune methode correspondante à : "
+    },
+    "plugins\/xpl\/core\/class\/xpl.class.php": {
+        "Veuillez vérifier la configuration": "",
+        "Tache cron introuvable": "",
+        "xPL Body ne peut etre vide": "",
+        "xPL type commande ne peut etre vide": "",
+        "Le schema xPL ne peut etre vide": "",
+        "Le message et le sujet ne peuvent être vide": ""
     }
 }

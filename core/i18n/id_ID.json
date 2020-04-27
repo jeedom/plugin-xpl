@@ -1,5 +1,48 @@
 {
-    "plugins/xpl/plugin_info/info.xml": {
-        "Plugin pour gerer des équipements xPL": "Plugin buat xPL"
+    "plugins\/xpl\/desktop\/php\/xpl.php": {
+        "401 - Accès non autorisé": "401 - Akses tidak sah",
+        "Ajouter un équipement": "",
+        "Rechercher": "Pencarian",
+        "Mes équipements xPL": "",
+        "Vous n'avez pas encore d'équipement xPL, cliquez sur Ajouter un équipement pour commencer": "",
+        "Sauvegarder": "Menyimpan",
+        "Supprimer": "Menghapus",
+        "Configuration avancée": "Konfigurasi lanjutan",
+        "Equipement": "Peralatan",
+        "Commandes": "Perintah",
+        "Général": "Umum",
+        "Nom de l'équipement xPL": "",
+        "Nom logique de l'équipement xPL": "",
+        "Objet parent": "Objek induk",
+        "Catégorie": "Kategori",
+        "Activer": "Mengaktifkan",
+        "Visible": "Terlihat",
+        "Délai maximum autorisé entre 2 messages (min)": "Jangka waktu maksimum 2 pesan",
+        "Ajouter une commande xPL": "",
+        "Nom": "Nama",
+        "Type": "Jenis",
+        "Schéma": "",
+        "Body": "",
+        "Paramètres": "Parameter²",
+        "Unité": "Satuan"
+    },
+    "plugins\/xpl\/desktop\/js\/xpl.js": {
+        "Afficher": "Memenitikan",
+        "Historiser": "Historicize",
+        "Min": "",
+        "Max": "",
+        "Tester": "Coba"
+    },
+    "plugins\/xpl\/core\/ajax\/xpl.ajax.php": {
+        "401 - Accès non autorisé": "401 - Akses tidak sah",
+        "Aucune methode correspondante à : ": "Aucune methode correspondante à : "
+    },
+    "plugins\/xpl\/core\/class\/xpl.class.php": {
+        "Veuillez vérifier la configuration": "",
+        "Tache cron introuvable": "",
+        "xPL Body ne peut etre vide": "",
+        "xPL type commande ne peut etre vide": "",
+        "Le schema xPL ne peut etre vide": "",
+        "Le message et le sujet ne peuvent être vide": ""
     }
 }

@@ -1,5 +1,48 @@
 {
-    "plugins/xpl/plugin_info/info.xml": {
-        "Plugin pour gerer des équipements xPL": "Plugin um xPL geräte zu verwenden"
+    "plugins\/xpl\/desktop\/php\/xpl.php": {
+        "401 - Accès non autorisé": "401 - Nicht autorisierter Zugriff",
+        "Ajouter un équipement": "Ausrüstung hinzufügen",
+        "Rechercher": "Suchen nach",
+        "Mes équipements xPL": "",
+        "Vous n'avez pas encore d'équipement xPL, cliquez sur Ajouter un équipement pour commencer": "",
+        "Sauvegarder": "Speichern",
+        "Supprimer": "Löschen",
+        "Configuration avancée": "Erweiterte Konfiguration",
+        "Equipement": "Gerät",
+        "Commandes": "Befehle",
+        "Général": "Allgemein",
+        "Nom de l'équipement xPL": "",
+        "Nom logique de l'équipement xPL": "",
+        "Objet parent": "Übergeordnetes Objekt",
+        "Catégorie": "Kategorie",
+        "Activer": "Aktivieren",
+        "Visible": "Sichtbar",
+        "Délai maximum autorisé entre 2 messages (min)": "Maximale Zeit zwischen 2 Nachrichten (min)",
+        "Ajouter une commande xPL": "",
+        "Nom": "Name",
+        "Type": "Typ",
+        "Schéma": "",
+        "Body": "",
+        "Paramètres": "Einstellungen",
+        "Unité": "Unit"
+    },
+    "plugins\/xpl\/desktop\/js\/xpl.js": {
+        "Afficher": "Anzeige",
+        "Historiser": "Chronik",
+        "Min": "Niedrig",
+        "Max": "Max",
+        "Tester": "Test"
+    },
+    "plugins\/xpl\/core\/ajax\/xpl.ajax.php": {
+        "401 - Accès non autorisé": "401 - Nicht autorisierter Zugriff",
+        "Aucune methode correspondante à : ": "Keine Methode entsprechend:"
+    },
+    "plugins\/xpl\/core\/class\/xpl.class.php": {
+        "Veuillez vérifier la configuration": "Bitte überprüfen Sie die Konfiguration",
+        "Tache cron introuvable": "Cron-Aufgabe nicht gefunden",
+        "xPL Body ne peut etre vide": "",
+        "xPL type commande ne peut etre vide": "",
+        "Le schema xPL ne peut etre vide": "",
+        "Le message et le sujet ne peuvent être vide": ""
     }
 }

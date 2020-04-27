@@ -1,5 +1,48 @@
 {
-    "plugins\/xpl\/plugin_info\/info.xml": {
-        "Plugin pour gerer des équipements xPL": "Plugin pour gerer des équipements xPL"
+    "plugins\/xpl\/desktop\/php\/xpl.php": {
+        "401 - Accès non autorisé": "401 - Accès non autorisé",
+        "Ajouter un équipement": "Ajouter un équipement",
+        "Rechercher": "Rechercher",
+        "Mes équipements xPL": "Mes équipements xPL",
+        "Vous n'avez pas encore d'équipement xPL, cliquez sur Ajouter un équipement pour commencer": "Vous n'avez pas encore d'équipement xPL, cliquez sur Ajouter un équipement pour commencer",
+        "Sauvegarder": "Sauvegarder",
+        "Supprimer": "Supprimer",
+        "Configuration avancée": "Configuration avancée",
+        "Equipement": "Equipement",
+        "Commandes": "Commandes",
+        "Général": "Général",
+        "Nom de l'équipement xPL": "Nom de l'équipement xPL",
+        "Nom logique de l'équipement xPL": "Nom logique de l'équipement xPL",
+        "Objet parent": "Objet parent",
+        "Catégorie": "Catégorie",
+        "Activer": "Activer",
+        "Visible": "Visible",
+        "Délai maximum autorisé entre 2 messages (min)": "Délai maximum autorisé entre 2 messages (min)",
+        "Ajouter une commande xPL": "Ajouter une commande xPL",
+        "Nom": "Nom",
+        "Type": "Type",
+        "Schéma": "Schéma",
+        "Body": "Body",
+        "Paramètres": "Paramètres",
+        "Unité": "Unité"
+    },
+    "plugins\/xpl\/desktop\/js\/xpl.js": {
+        "Afficher": "Afficher",
+        "Historiser": "Historiser",
+        "Min": "Min",
+        "Max": "Max",
+        "Tester": "Tester"
+    },
+    "plugins\/xpl\/core\/ajax\/xpl.ajax.php": {
+        "401 - Accès non autorisé": "401 - Accès non autorisé",
+        "Aucune methode correspondante à : ": "Aucune methode correspondante à : "
+    },
+    "plugins\/xpl\/core\/class\/xpl.class.php": {
+        "Veuillez vérifier la configuration": "Veuillez vérifier la configuration",
+        "Tache cron introuvable": "Tache cron introuvable",
+        "xPL Body ne peut etre vide": "xPL Body ne peut etre vide",
+        "xPL type commande ne peut etre vide": "xPL type commande ne peut etre vide",
+        "Le schema xPL ne peut etre vide": "Le schema xPL ne peut etre vide",
+        "Le message et le sujet ne peuvent être vide": "Le message et le sujet ne peuvent être vide"
     }
 }

@@ -1,5 +1,48 @@
 {
-    "plugins/xpl/plugin_info/info.xml": {
-        "Plugin pour gerer des équipements xPL": "Plugin para gestionar el dispositivo xPL"
+    "plugins\/xpl\/desktop\/php\/xpl.php": {
+        "401 - Accès non autorisé": "401 - Acceso no autorizado",
+        "Ajouter un équipement": "Agregar equipo",
+        "Rechercher": "Buscar",
+        "Mes équipements xPL": "",
+        "Vous n'avez pas encore d'équipement xPL, cliquez sur Ajouter un équipement pour commencer": "",
+        "Sauvegarder": "Guardar",
+        "Supprimer": "Borrar",
+        "Configuration avancée": "Configuración avanzada",
+        "Equipement": "Dispositivos",
+        "Commandes": "Comandos",
+        "Général": "Principal",
+        "Nom de l'équipement xPL": "",
+        "Nom logique de l'équipement xPL": "",
+        "Objet parent": "Objeto padre",
+        "Catégorie": "Categoría",
+        "Activer": "Activar",
+        "Visible": "Visible",
+        "Délai maximum autorisé entre 2 messages (min)": "Tiempo máximo permitido entre 2 mensajes (min)",
+        "Ajouter une commande xPL": "",
+        "Nom": "Nombre",
+        "Type": "Tipo",
+        "Schéma": "",
+        "Body": "",
+        "Paramètres": "Configuraciones",
+        "Unité": "Unidad"
+    },
+    "plugins\/xpl\/desktop\/js\/xpl.js": {
+        "Afficher": "Mostrar",
+        "Historiser": "Guardar historial",
+        "Min": "Bajo",
+        "Max": "Max",
+        "Tester": "Probar"
+    },
+    "plugins\/xpl\/core\/ajax\/xpl.ajax.php": {
+        "401 - Accès non autorisé": "401 - Acceso no autorizado",
+        "Aucune methode correspondante à : ": "Ningún método correspondiente a:"
+    },
+    "plugins\/xpl\/core\/class\/xpl.class.php": {
+        "Veuillez vérifier la configuration": "Por favor verifique la configuración",
+        "Tache cron introuvable": "Tarea Cron no encontrada",
+        "xPL Body ne peut etre vide": "",
+        "xPL type commande ne peut etre vide": "",
+        "Le schema xPL ne peut etre vide": "",
+        "Le message et le sujet ne peuvent être vide": ""
     }
 }
