@@ -35,7 +35,7 @@
     },
     "plugins\/xpl\/core\/ajax\/xpl.ajax.php": {
         "401 - Accès non autorisé": "401 - Akses tidak sah",
-        "Aucune methode correspondante à : ": "Aucune methode correspondante à : "
+        "Aucune methode correspondante à : ": "Aucune methode correspondante à :"
     },
     "plugins\/xpl\/core\/class\/xpl.class.php": {
         "Veuillez vérifier la configuration": "",
