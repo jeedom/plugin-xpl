@@ -44,5 +44,8 @@
         "xPL type commande ne peut etre vide": "Der Befehl xPL type darf nicht leer sein",
         "Le schema xPL ne peut etre vide": "Das xPL-Schema darf nicht leer sein",
         "Le message et le sujet ne peuvent être vide": "Nachricht und Betreff dürfen nicht leer sein"
+    },
+    "info.json": {
+        "Plugin pour gerer des équipements xPL": "Plugin zur Verwaltung von xPL-Geräten"
     }
 }

@@ -44,5 +44,8 @@
         "xPL type commande ne peut etre vide": "O comando do tipo xPL não pode estar vazio",
         "Le schema xPL ne peut etre vide": "O esquema xPL não pode estar vazio",
         "Le message et le sujet ne peuvent être vide": "A mensagem e o assunto não podem estar em branco"
+    },
+    "info.json": {
+        "Plugin pour gerer des équipements xPL": "Plug-in para gerenciar equipamentos xPL"
     }
 }
